@@ -1,3 +1,8 @@
+
+
+/* --------------------------------------------header---------------------------------------------------------- */
+/* ------------------------background------------------------ */
+
 .bgsvg {
     position: absolute;
     z-index: -1;
@@ -5,12 +10,302 @@
     width: 100%;
 }
 
-.wave {
-    position: absolute;
-    z-index: -2;
+.wave_sm{
+    display: none;
+}
+.wave_md{
+    display: none;
+}
+.wave_lg{
+    display: block;
+    animation: wave 15s infinite linear;
 }
 
+
+/* ----------------------navbar---------------------- */
 .navbar{
     background-color: transparent !important;
     padding-top: 20px;
+}
+
+.navbar-brand{
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 30px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #3f3f3f;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-toggle {
+    justify-self: end;
+    margin-right: 25px;
+    display: none;
+  }
+  
+  .menu-toggle:hover{
+    cursor: pointer;
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+
+
+  
+  #mobile-menu.is-active .bar:nth-child(1){
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(3){
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+
+.nav-link {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* -------------bitmogi------------- */
+.bitmogi {
+    margin: auto;
+    text-align: center;
+}
+
+.bitmogi-img {
+    width: 360px;
+    height: 360px;
+}
+
+
+
+/* font-family: 'Balsamiq Sans', cursive; */
+
+.hey-tag {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.hey-tag p{
+    margin-bottom: 0;
+}
+
+.intro {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    opacity: 80%
+}
+
+.intro p{
+    margin: auto;
+    width: 70%;
+}
+
+
+.social-container {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+.social-icons li {
+    display: inline-block;
+    margin: 0.20em;
+    position: relative;
+    font-size: 1.4em;
+}
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+}
+.social-icons a {
+    display: inline-block;
+}
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #00b5f5, #002a8f);
+    transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #00b5f5;
+    background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+
+
+
+  /* ----------------------------------------------------project-page-------------------------------------- */
+
+  .quotediv {
+      padding-top: 20px;
+      text-align: center;
+  }
+
+  .quoteHeading {
+    font-family: 'Fredoka One', cursive;
+    background: -webkit-linear-gradient(#00b5f5,#002a8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  .quote {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300px;
+    opacity: 80%;    
+  }
+
+  .writer {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .quotediv hr{
+      width: 300px;
+      border-width: 1px;
+      border-style: solid none;
+      border-color: transparent;
+      border-image: linear-gradient(to right, #00b5f5 , #002a8f, #00b5f5);
+      border-image-slice: 1;
+      opacity: 100%;
+  }
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+    .wave_sm{
+        display: block;
+        position: absolute;
+        top: -50px;
+    }
+    .wave_md{
+        display: none;
+    }
+    .wave_lg{
+        display: none;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
+    .bitmogi-img {
+        width: 250px;
+        height: 250px;
+    }
+    .hey-tag {
+        font-size: 60px;
+    }
+    .intro {
+        font-size: 16px;
+    }
+    .quoteHeading { 
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 720px){
+    .wave_sm{
+        display: block;
+        position: absolute;
+        top: -130px;
+    }
+    .wave_md{
+        display: none;
+    }
+    .wave_lg{
+        display: none;
+    }
+    .navbar-brand {
+        font-size: 25px;
+    }
+    .bitmogi-img {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-toggle, .bar {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1200px) and  (min-width: 900px) {
+    .wave_sm{
+        display: none;
+    }
+    .wave_md{
+        display: block;
+        position: absolute;
+        top: -140px;
+    }
+    .wave_lg{
+        display: none;
+    }
+    .navbar-brand {
+        font-size: 25px;
+    }
+    .bitmogi{
+        padding-top: 20px;
+    }
+    .bitmogi-img {
+        width: 300px;
+        height: 300px;
+    }
 }

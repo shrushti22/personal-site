@@ -1,32 +1,14 @@
-import wave from './wave.svg';
+import wave_lg from './wave-lg.svg';
+import wave_md from './wave-md.svg';
+import wave_sm from './wave-sm2.svg';
 import './App.css';
 
 function Background() {
     return (
         <div className="bgsvg">
-            <img src={wave} alt="wave" className="wave"/>
-            <svg height="200" width="250" className="circle">
-                <circle cx="70" cy="100" r="40" fill="#f5b8ea" />
-            </svg>
-            <svg height="400" width="250" className="circle">
-                <circle cx="70" cy="350" r="40" fill="#f5b8ea" />
-            </svg>
-            <svg height="300" width="50" className="circle">
-                <circle cx="20" cy="220" r="20" fill="#f5b8ea" />
-            </svg>
-            <svg height="300" width="180" className="circle">
-                <circle cx="150" cy="100" r="20" fill="#f5b8ea" />
-            </svg>
-            
-            <svg height="400" width="400" className="circle">
-                <circle cx="200" cy="300" r="40" fill="#f5b8ea" />
-            </svg>
-            <svg height="300" width="50" className="circle">
-                <circle cx="20" cy="120" r="20" fill="#f5b8ea" />
-            </svg>
-            <svg height="400" width="250" className="circle">
-                <circle cx="200" cy="320" r="40" fill="#f5b8ea" />
-            </svg>
+            <img src={wave_lg} alt="wave" className="wave_lg"/>
+            <img src={wave_md} alt="wave" className="wave_md"/>
+            <img src={wave_sm} alt="wave" className="wave_sm"/>
         </div>
     )
 }
