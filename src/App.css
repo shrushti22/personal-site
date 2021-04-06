@@ -179,6 +179,7 @@
     -webkit-transform: scale(2.2);
     color: #00b5f5;
     background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
@@ -196,8 +197,9 @@
   .quoteHeading {
     font-family: 'Fredoka One', cursive;
     background: -webkit-linear-gradient(#00b5f5,#002a8f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 60px;
     font-weight: 300;
   }
@@ -217,7 +219,7 @@
 
   .quotediv hr{
       width: 300px;
-      border-width: 1px;
+      border-width: 2px;
       border-style: solid none;
       border-color: transparent;
       border-image: linear-gradient(to right, #00b5f5 , #002a8f, #00b5f5);
@@ -225,9 +227,72 @@
       opacity: 100%;
   }
 
+  .projects .col-4{
+      padding: 10px;
+  }
 
+  .card:hover{
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+  }
+  
 
+  .project-title {
+      height: max-content;
+      margin: auto;
+      padding: 10px 20px;
+  }
 
+  .project-title .col-3{
+      margin: auto;
+  }
+  .project-title .col-9{
+        margin: auto;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 50px;
+        word-wrap: break-word;
+  }
+
+  .project-content p{
+        margin: auto;
+        height: max-content;
+        padding: 10px 20px;
+        text-align: left;
+        word-wrap: break-word;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(0,0,0,0.5);
+  }
+
+  .project-content .tag{
+      display: inline-block;
+      margin: 5px;
+      padding: 2px 15px;
+      border-radius: 4px;
+      font-size: 13px;
+  }
+
+  .is-danger {
+      background-color: rgba(220, 53, 69, 0.1);
+  }
+  .is-primary{
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  .is-info{
+    background-color: rgba(23, 162, 184, 0.1);
+  }
+  .is-success{
+    background-color: rgba(40, 167, 69, 0.1);
+  }
+  .is-warning{
+    background-color: rgba(255, 193, 7, 0.1);
+  }
+
+a.custom-card,
+a.custom-card:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
 
 @media only screen and (max-width: 720px) {
     .wave_sm{
