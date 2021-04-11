@@ -1,4 +1,5 @@
 import Navbar from './navbar.js';
+import Card from './card.js';
 import './App.css';
 
 function Project() {
@@ -14,165 +15,36 @@ function Project() {
             <div className="container projects">
                 <div className="row">
                     <div className="col-4">
-                        <a href="#" className="custom-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div className="container project-title">
-                                        <div className="row">
-                                            <div class="col-3">
-                                                <i class="fa fa-github fa-4x icon"></i>
-                                            </div>
-                                            <div class="col-9">
-                                                <h3>Card title</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="project-content">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <p>
-                                            <span className="tag text-danger is-danger">Tool</span>
-                                            <span className="tag text-primary is-primary">Tool</span>
-                                            <span className="tag text-warning is-warning">Tool</span>
-                                            <span className="tag text-success is-success">Tool</span>
-                                            <span className="tag text-info is-info">Tool</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        
+                        <Card link="https://github.com/shrushti22/Meet-Script" title="Meet-Script"
+                            description="A Chrome Extension that gives you transcript of google meet. Helps you keep a record of all the conversation that took place on GOOGLE MEET."
+                            noOfTools={3} tools={["Javascript"]}
+                        />
                     </div>
                     <div className="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                        <div className="container project-title">
-                            <div className="row">
-                                <div class="col-3">
-                                    <i class="fa fa-github fa-4x icon"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h3>Card title</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p>
-                                        <span className="tag text-danger is-danger">Tool</span>
-                                        <span className="tag text-info is-info">Tool</span>
-                                        <span className="tag text-success is-success">Tool</span>
-                                        <span className="tag text-warning is-warning">Tool</span>
-                                        <span className="tag text-primary is-primary">Tool</span>
-                            </p>
-                        </div>
-                        </div>
-                        </div>
+                        <Card link="https://github.com/shrushti22/Mellowbite-Restro" title="Mellowbite"
+                            description="A fully functional restaurant website that allows users to signup and order food online or pre-booking table."
+                            noOfTools={3} tools={["Node","MongoDB","Javascript"]}
+                        />
                     </div>
                     <div className="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                        <div className="container project-title">
-                            <div className="row">
-                                <div class="col-3">
-                                    <i class="fa fa-github fa-4x icon"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h3>Card title</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p>
-                                        <span className="tag text-warning is-warning">Tool</span>
-                                        <span className="tag text-success is-success">Tool</span>
-                                        <span className="tag text-danger is-danger">Tool</span>
-                                        <span className="tag text-primary is-primary">Tool</span>
-                                        <span className="tag text-info is-info">Tool</span>
-                            </p>
-                        </div>
-                        </div>
-                        </div>
+                        <Card link="https://github.com/shrushti22/schudle" title="Schudle"
+                            description="Schudle is an Online Learning Management website for schools. The platform helps schools to manage schools online."
+                            noOfTools={3} tools={["Node","MongoDB","Drive API","Calendar API","Javascript"]}
+                        />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                        <div className="container project-title">
-                            <div className="row">
-                                <div class="col-3">
-                                    <i class="fa fa-github fa-4x icon"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h3>Card title</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p>
-                                        <span className="tag text-warning is-warning">Tool</span>
-                                        <span className="tag text-primary is-primary">Tool</span>
-                                        <span className="tag text-info is-info">Tool</span>
-                                        <span className="tag text-danger is-danger">Tool</span>
-                                        <span className="tag text-success is-success">Tool</span>
-                            </p>
-                        </div>
-                        </div>
-                        </div>
+                        <Card link="https://github.com/RuntimeTerror-Plotify/plotify" title="Plotify"
+                            description="A web app which facilitates user to visualize data and perform statistical operation without any need to write code in machine learning and data science domain."
+                            noOfTools={3} tools={["Node","MongoDB","Javascript","Plotly"]}
+                        />
                     </div>
                     <div className="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                        <div className="container project-title">
-                            <div className="row">
-                                <div class="col-3">
-                                    <i class="fa fa-github fa-4x icon"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h3>Card title</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p>
-                                        <span className="tag text-success is-success">Tool</span>
-                                        <span className="tag text-primary is-primary">Tool</span>
-                                        <span className="tag text-info is-info">Tool</span>
-                                        <span className="tag text-warning is-warning">Tool</span>
-                                        <span className="tag text-danger is-danger">Tool</span>
-                            </p>
-                        </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                        <div className="container project-title">
-                            <div className="row">
-                                <div class="col-3">
-                                    <i class="fa fa-github fa-4x icon"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h3>Card title</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p>
-                                        <span className="tag text-success is-success">Tool</span>
-                                        <span className="tag text-danger is-danger">Tool</span>
-                                        <span className="tag text-info is-info">Tool</span>
-                                        <span className="tag text-primary is-primary">Tool</span>
-                                        <span className="tag text-warning is-warning">Tool</span>
-                            </p>
-                        </div>
-                        </div>
-                        </div>
+                        <Card link="https://github.com/shrushti22/event_manager" title="Event-Manager"
+                            description="It is a basic functioning event management website with security and authentication."
+                            noOfTools={3} tools={["Javascript"]}
+                        />
                     </div>
                 </div>
             </div>

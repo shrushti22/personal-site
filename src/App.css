@@ -227,10 +227,16 @@
       opacity: 100%;
   }
 
+  .projects {
+      padding-bottom: 100px;
+  }
   .projects .col-4{
       padding: 10px;
   }
 
+  .card {
+      height: 100%;
+  }
   .card:hover{
     box-shadow:0 0 10px rgba(0,0,0,0.2);
   }
@@ -293,6 +299,77 @@ a.custom-card:hover {
     color: inherit;
     text-decoration: inherit;
 }
+
+
+/* ---------------------------------------------------------aboutme---------------------------------------------- */
+
+
+.about-me{
+    margin-top: 50px;
+}
+
+.about-me .col-8 {
+    padding-left: 20px;
+}
+.about-me .col-8 .info{
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgba(0,0,0,0.6);
+}
+.profile {
+    margin-bottom: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+.profile img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid #fff;
+}
+.profile h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-size: 30px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+.profile p {
+    margin-top: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    }
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item {
+  display: inline-block;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+  }
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 100%;
+    outline: none;
+    background-color: #002a8f;
+  }
+  ul.social-buttons li a:active,
+  ul.social-buttons li a:focus,
+  ul.social-buttons li a:hover {
+    background-color: #00b5f5;
+  }
 
 @media only screen and (max-width: 720px) {
     .wave_sm{
