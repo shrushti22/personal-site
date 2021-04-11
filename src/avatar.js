@@ -1,5 +1,5 @@
 import './App.css';
-import profilephoto from './shrushti.jpg'
+import profilephoto from './shrushti.jpg';
 
 function Avatar() {
     return(

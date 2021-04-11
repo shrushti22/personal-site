@@ -10,7 +10,7 @@ import './App.css';
 class Navbar extends React.Component {
   constructor(props){
     super(props);
-    this.state = {button : false}
+    this.state = {button : false, location : window.location.pathname};
     this.handleClick = this.handleClick.bind(this);
   }
     
@@ -32,9 +32,10 @@ class Navbar extends React.Component {
             </div>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <Link className="nav-link" to="/aboutme">About me</Link>
-                <Link className="nav-link" to="/project">Projects</Link>
-                <Link className="nav-link" to="/resume">Resume</Link>
+                <Link className={(this.state.location==='/aboutme')? "nav-link active" : "nav-link"} to="/aboutme">About me</Link>
+                <Link className={(this.state.location==='/project')? "nav-link active" : "nav-link"} to="/project">Projects</Link>
+                <Link className={(this.state.location==='/timeline')? "nav-link active" : "nav-link"} to="/timeline">Timeline</Link>
+                <Link className={(this.state.location==='/resume')? "nav-link active" : "nav-link"} to="/resume">Resume</Link>
               </div>
             </div>
           </nav>
