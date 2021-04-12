@@ -407,7 +407,7 @@ ul.social-buttons {
     width: 2px;
     margin-left: -1.5px;
     content: "";
-    background-color: #e9ecef;
+    background-color: #002a8f;
   }
   .timeline > li {
     position: relative;
@@ -450,7 +450,7 @@ ul.social-buttons {
     margin-left: 0;
     text-align: center;
     color: #fff;
-    border: 7px solid #e9ecef;
+    border: 7px solid #eee;
     border-radius: 100%;
     background-color: #00b5f5;
   }

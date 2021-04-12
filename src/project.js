@@ -7,10 +7,10 @@ function Project() {
         <div>
             <Navbar />
             <div className="quotediv">
-                <p className="quoteHeading">Faith</p>
-                <p className="quote">You don’t  have  to  see  the  whole  staircase,  just  take  the  first  step.</p>
+                <p className="quoteHeading">Projects</p>
+                <p className="quote">The Best Way To Get Started Is To Quit Talking And Begin Doing.</p>
                 <hr />
-                <p className="writer">Martin Luther King Jr.</p>
+                <p className="writer">Walt Disney</p>
             </div>
             <div className="container projects">
                 <div className="row">

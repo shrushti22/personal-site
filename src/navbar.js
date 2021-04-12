@@ -35,7 +35,7 @@ class Navbar extends React.Component {
                 <Link className={(this.state.location==='/aboutme')? "nav-link active" : "nav-link"} to="/aboutme">About me</Link>
                 <Link className={(this.state.location==='/project')? "nav-link active" : "nav-link"} to="/project">Projects</Link>
                 <Link className={(this.state.location==='/timeline')? "nav-link active" : "nav-link"} to="/timeline">Timeline</Link>
-                <Link className={(this.state.location==='/resume')? "nav-link active" : "nav-link"} to="/resume">Resume</Link>
+                <Link className={(this.state.location==='/resume')? "nav-link active" : "nav-link"} to="/resume.pdf" download target="_blank">Resume</Link>
               </div>
             </div>
           </nav>
