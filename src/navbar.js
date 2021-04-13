@@ -22,6 +22,7 @@ class Navbar extends React.Component {
 
     render() {
         return(
+          <div className={(this.state.location==='/')? "" : "navbar-shadow"}>
             <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link className="navbar-brand" to="/">Shrushti Vasaniya</Link>
@@ -39,6 +40,7 @@ class Navbar extends React.Component {
               </div>
             </div>
           </nav>
+        </div>
         </div>
         )
         

@@ -15,7 +15,7 @@ function Card(props) {
                                     <div className="container project-title">
                                         <div className="row">
                                             <div class="col-3">
-                                                <i class="fa fa-github fa-4x icon"></i>
+                                                <img src={props.icon}/>
                                             </div>
                                             <div class="col-9">
                                                 <h3>{props.title}</h3>

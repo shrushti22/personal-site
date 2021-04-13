@@ -27,10 +27,13 @@
     background-color: transparent !important;
     padding-top: 20px;
 }
-
+.navbar-shadow{
+  box-shadow: 0.5px 0 10px 0 rgba(0,0,0,0.1);
+}
 .navbar-brand{
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Roboto Condensed', serif;
     font-size: 30px;
+    color: rgb(66,66,66) !important;
 }
 
 .navbar-nav{
@@ -52,7 +55,7 @@
   
   .menu-toggle {
     justify-self: end;
-    margin-right: 25px;
+    margin-right: 20px;
     display: none;
   }
   
@@ -116,6 +119,10 @@
     text-align: center;
     font-size: 70px;
     font-weight: 400;
+    background: -webkit-linear-gradient(#00b5f5,#002a8f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hey-tag p{
@@ -137,60 +144,102 @@
 
 
 .social-container {
-    width: 400px;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
 }
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 1em;
+
+.social-container a {
+  text-decoration: none !important;
+  width: 3.7rem;
+  height: 3.7rem;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin:5px 5px;
+  font-size: 1.5rem;
+  overflow: hidden;
+  position: relative;
 }
-.social-icons li {
-    display: inline-block;
-    margin: 0.20em;
-    position: relative;
-    font-size: 1.4em;
+.social-container a.google{
+  color: #db3236;
+  border: 1px solid #db3236;
 }
-.social-icons i {
-    color: #fff;
-    position: absolute;
-    top: 21px;
-    left: 21px;
-    transition: all 265ms ease-out;
+.social-container a.linkedin{
+  color: #2867B2;
+  border: 1px solid #2867B2;
 }
-.social-icons a {
-    display: inline-block;
+.social-container a.facebook{
+  color: #4267B2;
+  border: 1px solid #4267B2;
 }
-.social-icons a:before {
-    transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    content: " ";
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    display: block;
-    background: linear-gradient(45deg, #00b5f5, #002a8f);
-    transition: all 265ms ease-out;
+.social-container a.github{
+  color: #6cc644;
+  border: 1px solid #6cc644;
 }
-.social-icons a:hover:before {
-    transform: scale(0);
-    transition: all 265ms ease-in;
+.social-container a.instagram{
+  color: #cd486b;
+  border: 1px solid #cd486b;
 }
-.social-icons a:hover i {
-    transform: scale(2.2);
-    -ms-transform: scale(2.2);
-    -webkit-transform: scale(2.2);
-    color: #00b5f5;
-    background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 265ms ease-in;
+.social-container a.twitter{
+  color: #1DA1F2;
+  border: 1px solid #1DA1F2;
+}
+.social-container a i {
+  position: relative;
+  z-index: 3;
+}
+.social-container a:last-child {
+  margin-right: 0px;
+}
+.social-container a:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.social-container a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-container a i.fa-linkedin{
+  color: #2867B2;
+}
+.social-container a i.fa-twitter{
+  color: #1DA1F2;
+}
+.social-container a i.fa-github{
+  color: #6cc644;
+}
+.social-container a i.fa-facebook{
+  color: #4267B2;
+}
+.social-container a i.fa-instagram{
+  color: #cd486b;
+}
+.social-container a i.fa-google{
+  color: #db3236;
 }
 
 
+
+
+.social-container a {
+  transition: all 0.2s linear 0.2s;
+}
+.social-container a i{
+  transition: all 0.2s linear 0s;
+}
+.social-container a:hover {
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.social-container a:hover i {
+  transform: scale(1.4);
+  /* text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3); */
+  transition: all 0.2s linear 0.2s;
+}
 
   /* ----------------------------------------------------project-page-------------------------------------- */
 
@@ -214,6 +263,7 @@
     font-size: 20px;
     font-weight: 300px;
     opacity: 80%;    
+    padding: 10px;
   }
 
   .writer {
@@ -235,12 +285,14 @@
   .projects {
       padding-bottom: 100px;
   }
-  .projects .col-4{
-      padding: 10px;
+  .projects .col-lg-4.col-md-6.col-sm-12 {
+      padding: 5px;
   }
 
   .card {
       height: 100%;
+      margin: 10px;
+      background-color: rgba(245,245,245,0.3);
   }
   .card:hover{
     box-shadow:0 0 10px rgba(0,0,0,0.2);
@@ -251,6 +303,7 @@
       height: max-content;
       margin: auto;
       padding: 10px 20px;
+      color: rgb(66,66,66) !important;
   }
 
   .project-title .col-3{
@@ -310,31 +363,21 @@ a.custom-card:hover {
 
 
 .about-me{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.about-me .col-8 {
+.about-me .col-lg-8.col-sm-12 {
     padding-left: 20px;
 }
-.about-me .col-8 .info{
-    padding-top: 40px;
+.about-me .col-lg-8.col-sm-12 .info{
+    padding-top: 60px;
     font-size: 18px;
     font-family: 'Merriweather Sans', sans-serif;
     color: rgba(0,0,0,0.6);
 }
-.about-me .col-8 hr{
-    width: 300px;
-      border-width: 2px;
-      border-style: solid none;
-      border-color: transparent;
-      border-image: linear-gradient(to right, #00b5f5 , #002a8f, #00b5f5);
-      border-image-slice: 1;
-      opacity: 100%;
-      text-align: left;
-}
 .profile {
-    margin-bottom: 50px;
-    padding-top: 100px;
+    margin-bottom: 20px;
+    padding-top: 10px;
     text-align: center;
 }
 .profile img {
@@ -347,12 +390,13 @@ a.custom-card:hover {
     margin-bottom: 0;
     text-transform: none;
     font-size: 30px;
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Roboto Condensed', serif;
+    color: rgb(66,66,66) !important;
 }
 .profile p {
     margin-top: 0;
     font-family: 'Merriweather Sans', sans-serif;
-    }
+}
 
 .list-inline {
   padding-left: 0;
@@ -368,7 +412,7 @@ a.custom-card:hover {
 ul.social-buttons {
     margin-bottom: 0;
   }
-  ul.social-buttons li a {
+ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
     display: block;
@@ -388,6 +432,10 @@ ul.social-buttons {
 
 
 /* ------------------------------------------------Timeline--------------------------------------------------- */
+
+#timeline{
+  font-family: 'Merriweather Sans', sans-serif;
+}
 
 #timeline ul.list-group li {
     border: none;
@@ -452,7 +500,7 @@ ul.social-buttons {
     color: #fff;
     border: 7px solid #eee;
     border-radius: 100%;
-    background-color: #00b5f5;
+    background-color: #002a8f;
   }
   .timeline > li .timeline-image h4 {
     font-size: 10px;
@@ -485,6 +533,11 @@ ul.social-buttons {
   }
   .timeline .timeline-heading h4.subheading {
     text-transform: none;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#00b5f5,#002a8f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .timeline .timeline-body > p,
   .timeline .timeline-body > ul {
@@ -593,7 +646,7 @@ ul.social-buttons {
         height: 250px;
     }
     .hey-tag {
-        font-size: 60px;
+        font-size: 50px;
     }
     .intro {
         font-size: 16px;
@@ -601,7 +654,22 @@ ul.social-buttons {
     .quoteHeading { 
         font-size: 50px;
     }
+    .social-container a{
+      width: 3rem;
+      height: 3rem;
+    }
+    .about-me .col-lg-8.col-sm-12 .info{
+      text-align: center;
+      padding: 20px 20px;
+
+    }
+    .about-me .col-lg-8.col-sm-12 .quoteHeading{
+      text-align: center;
+    }
 }
+
+
+
 @media only screen and (max-width: 900px) and (min-width: 720px){
     .wave_sm{
         display: block;
@@ -621,12 +689,33 @@ ul.social-buttons {
         width: 270px;
         height: 270px;
     }
+    .social-container a{
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    .about-me .col-lg-8.col-sm-12 .info{
+      text-align: center;
+      padding: 20px 20px;
+
+    }
+    .about-me .col-lg-8.col-sm-12 .quoteHeading{
+      text-align: center;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
     .menu-toggle, .bar {
         display: block;
         cursor: pointer;
+    }
+    .about-me .col-lg-8.col-sm-12 .info{
+      text-align: center;
+      padding: 20px 20px;
+
+    }
+    .about-me .col-lg-8.col-sm-12 .quoteHeading{
+      text-align: center;
     }
 }
 
@@ -656,3 +745,7 @@ ul.social-buttons {
 
 
 
+.footer{
+  box-shadow: 0.3px 0 10px 0 rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
