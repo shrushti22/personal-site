@@ -1,15 +1,15 @@
 import './App.css';
 import Navbar from './navbar.js';
 import ListTimeline from './listtimeline.js';
-import python from './timeline_images/python.jpg';
-import ML from './timeline_images/DL.jpg';
-import frontend from "./timeline_images/frontend.jpg";
-import iirs from "./timeline_images/iirs.png";
-import node from "./timeline_images/node.jpg";
-import develope from "./timeline_images/developing.jpg";
-import chrome from "./timeline_images/chrome.jfif";
+import python from './timeline_images/python.webp';
+import ML from './timeline_images/DL.webp';
+import frontend from "./timeline_images/frontend.webp";
+import iirs from "./timeline_images/iirs.webp";
+import node from "./timeline_images/node.webp";
+import develope from "./timeline_images/developing.webp";
+import chrome from "./timeline_images/chrome.webp";
 import Footer from './footer.js';
-import reactimg from './timeline_images/react.jpg';
+import reactimg from './timeline_images/react.webp';
 
 function Timeline(){
     return(

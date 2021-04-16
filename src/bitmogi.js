@@ -1,4 +1,4 @@
-import bitmogi from './bitmogi2.png';
+import bitmogi from './timeline_images/bitmogi2.webp';
 
 
 

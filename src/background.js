@@ -1,6 +1,6 @@
-import wave_lg from './wave-lg.svg';
-import wave_md from './wave-md.svg';
-import wave_sm from './wave-sm2.svg';
+import wave_lg from './timeline_images/wave-lg.svg';
+import wave_md from './timeline_images/wave-md.svg';
+import wave_sm from './timeline_images/wave-sm2.svg';
 import './App.css';
 
 function Background() {

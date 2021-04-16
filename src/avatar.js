@@ -1,5 +1,5 @@
 import './App.css';
-import profilephoto from './shrushti.jpg';
+import profilephoto from './timeline_images/shrushti.webp';
 
 function Avatar() {
     return(
