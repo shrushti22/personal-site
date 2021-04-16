@@ -5,7 +5,6 @@ import Footer from './footer.js';
 
 
 function Intro() {
-    var iconstyle
     return (
     <div>
         <div className="hey-tag">

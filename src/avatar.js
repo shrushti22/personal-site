@@ -4,7 +4,7 @@ import profilephoto from './shrushti.jpg';
 function Avatar() {
     return(
             <div class="profile">
-                <img class="rounded-circle mx-auto" src={profilephoto} />
+                <img class="rounded-circle mx-auto" src={profilephoto} alt="image not found" />
                 <h4>Shrushti Vasaniya</h4>
                 <p class="text-muted">@shrushti22</p>
                 <ul class="list-inline social-buttons">

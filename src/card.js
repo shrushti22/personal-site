@@ -15,7 +15,7 @@ function Card(props) {
                                     <div className="container project-title">
                                         <div className="row">
                                             <div class="col-3">
-                                                <img src={props.icon}/>
+                                                <img src={props.icon} alt="image not found"/>
                                             </div>
                                             <div class="col-9">
                                                 <h3>{props.title}</h3>
