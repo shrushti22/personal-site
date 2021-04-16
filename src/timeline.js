@@ -17,8 +17,8 @@ function Timeline(){
             <Navbar />
             <div className="quotediv">
                 <p className="quoteHeading">Timeline</p>
-                <p className="quote">You don’t  have  to  see  the  whole  staircase,  just  take  the  first  step.</p>
-                <hr />
+                <p className="quote">You don’t have to see the whole staircase, just take the first step.</p>
+                <hr/>
                 <p className="writer">Martin Luther King Jr.</p>
             </div>
             

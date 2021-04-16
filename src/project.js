@@ -10,7 +10,7 @@ function Project() {
             <div className="quotediv">
                 <p className="quoteHeading">Projects</p>
                 <p className="quote">The Best Way To Get Started Is To Quit Talking And Begin Doing.</p>
-                <hr />
+                <hr/>
                 <p className="writer">Walt Disney</p>
             </div>
             <div className="container projects">
@@ -33,8 +33,6 @@ function Project() {
                             noOfTools={3} tools={["Node","MongoDB","Drive API","Calendar API","Javascript"]}
                         />
                     </div>
-                </div>
-                <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <Card link="https://github.com/RuntimeTerror-Plotify/plotify" icon="https://img.icons8.com/cotton/48/000000/graph-report--v3.png" title="Plotify"
                             description="A web app which facilitates user to visualize data and perform statistical operation without any need to write code in machine learning and data science domain."

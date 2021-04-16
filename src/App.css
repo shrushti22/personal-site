@@ -262,7 +262,7 @@
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    opacity: 80%;    
+    color: rgba(0,0,0,0.8);   
     padding: 10px;
   }
 
@@ -279,7 +279,7 @@
       border-color: transparent;
       border-image: linear-gradient(to right, #00b5f5 , #002a8f, #00b5f5);
       border-image-slice: 1;
-      opacity: 100%;
+      opacity: 1;
   }
 
   .projects {
