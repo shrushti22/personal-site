@@ -2,7 +2,6 @@ import './App.css';
 
 
 function Footer(){
-    var d = new Date();
 
     return(
         <div className="footer bg-light text-center p-3">
