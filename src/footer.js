@@ -7,7 +7,7 @@ function Footer(){
 
     return(
         <div className="footer bg-light text-center p-3">
-            <p className="m-1" style={{color: 'rgba(0,0,0,0.5)'}}>&#169; Copyright {n} Personal Site</p>
+            <p className="m-1" style={{color: 'rgba(0,0,0,0.5)'}}>Made with React.</p>
         </div>
     )
 }

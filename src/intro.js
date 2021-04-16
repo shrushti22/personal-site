@@ -16,7 +16,6 @@ function Intro() {
       </div>
       <div class="container mt-4">
             <div class="social-container effect amiens">
-                <a href="#" className="google" target="_blank" rel="noopener noreferrer"><i class="fa fa-google"></i></a>
                 <a href="https://www.linkedin.com/in/shrushti-vasaniya-16983b196/" className="linkedin" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
                 <a href="https://github.com/shrushti22" className="github"  target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
                 <a href="https://www.facebook.com/srushti.vasaniya/" className="facebook" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
