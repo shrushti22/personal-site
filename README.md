@@ -1,6 +1,6 @@
 # Portfolio 
 
-<img src="./src/bitmogi2.png" alt="Notification Preview" />
+<img src="./src/timeline_images/bitmogi2.webp" alt="Notification Preview" />
 
 <br/>
 <br/>
